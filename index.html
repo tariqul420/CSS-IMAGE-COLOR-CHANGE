@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" type="image/x-icon" />
+    <title>CSS IMAGE COLOR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS <span id="red">IMAGE</span> <span id="green">COLOR</span> <span id="blue">CHANGE</span></h1>
+      <div class="input">
+        <label for=""><span class="red">RGB</span><span class="green">-</span><span class="blue">Color</span>:</label>
+        <input class="target" type="text" placeholder="Target RGB" value="255, 0, 0" />
+        <button class="execute">Compute Filters</button>
+      </div>
+
+      <div class="color-1">
+        <p>Real pixel, color applied through CSS <code>background-color</code>:</p>
+        <div class="pixel realPixel"></div>
+      </div>
+
+      <div class="color-2">
+        <p>Filtered pixel, color applied through CSS <code>filter</code>:</p>
+        <div class="pixel filterPixel"></div>
+      </div>
+
+      <p class="filterDetail"></p>
+      <p class="lossDetail"></p>
+
+      <p class=".footer">Developer Tariqul Islam</p>
+      <div class="footer-img">
+        <a href="https://www.facebook.com/tariqul.islam.fb" target="_blank">
+          <img style="width: 44px" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="" />
+        </a>
+        <a href="https://github.com/tariqul420" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
