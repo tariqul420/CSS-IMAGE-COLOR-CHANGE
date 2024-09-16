@@ -291,7 +291,7 @@ $("button.execute").click(() => {
   if (result.loss < 1) {
     lossMsg = "This is a perfect result.";
   } else if (result.loss < 5) {
-    lossMsg = "The is close enough.";
+    lossMsg = "This is close enough.";
   } else if (result.loss < 15) {
     lossMsg = "The color is somewhat off. Consider running it again.";
   } else {
@@ -302,4 +302,31 @@ $("button.execute").click(() => {
   $(".filterPixel").attr("style", result.filter);
   $(".filterDetail").text(result.filter);
   $(".lossDetail").html(`Loss: ${result.loss.toFixed(1)}. <b>${lossMsg}</b>`);
+
+  // Show the copy button
+  $(".copyFilter").show();
+});
+
+// Copy to clipboard functionality
+$("button.copyFilter").click(() => {
+  let filterText = $(".filterDetail").text();
+  if (!filterText) return;
+
+  // Create a temporary element to select and copy the text
+  let tempElement = $("<textarea>");
+  $("body").append(tempElement);
+  tempElement.val(filterText).select();
+  document.execCommand("copy");
+  tempElement.remove();
+
+  // Change the button text to "Copied!" and hide the icon
+  let copyButton = $(".copyFilter");
+  copyButton.find(".text").text("Copied!"); // Change text
+  copyButton.find(".icon").hide();          // Hide the icon
+
+  // Revert the text back to "Copy" and show the icon after 2 seconds
+  setTimeout(() => {
+    copyButton.find(".text").text("Copy");
+    copyButton.find(".icon").show(); // Show the icon
+  }, 2000);
 });

@@ -4,32 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/07f60ceea9.js" crossorigin="anonymous"></script>
     <title>CSS IMAGE COLOR</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>CSS <span id="red">IMAGE</span> <span id="green">COLOR</span> <span id="blue">CHANGE</span></h1>
+      <h1>CSS IMAGE COLOR CHANGE</h1>
       <div class="input">
-        <label for=""><span class="red">RGB</span><span class="green">-</span><span class="blue">Color</span>:</label>
+        <label for="">RGB-Color:</label>
         <input class="target" type="text" placeholder="Target RGB" value="255, 0, 0" />
         <button class="execute">Compute Filters</button>
       </div>
 
       <div class="color-1">
-        <p>Real pixel, color applied through CSS <code>background-color</code>:</p>
+        <p style="color: whitesmoke;">Real pixel, color applied through CSS <code>background-color</code>:</p>
         <div class="pixel realPixel"></div>
       </div>
 
       <div class="color-2">
-        <p>Filtered pixel, color applied through CSS <code>filter</code>:</p>
+        <p style="color: whitesmoke;">Filtered pixel, color applied through CSS <code>filter</code>:</p>
         <div class="pixel filterPixel"></div>
       </div>
 
-      <p class="filterDetail"></p>
-      <p class="lossDetail"></p>
+      <div class="filter-copy">
+        <div><p style="color: #30a459;" class="filterDetail"></p></div>
+        <div>
+          <button class="copyFilter" style="display: none;">
+            <span class="icon"></span>
+            <span class="text">Copy</span>
+          </button>
+        </div>
+      </div>
+      <p class="lossDetail" style="color: whitesmoke;"></p>
 
-      <p class=".footer">Developer Tariqul Islam</p>
+      <p class=".footer" style="color: whitesmoke;">Developer Tariqul Islam</p>
       <div class="footer-img">
         <a href="https://www.facebook.com/tariqul.islam.fb" target="_blank">
           <img style="width: 44px" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="" />

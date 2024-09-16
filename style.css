@@ -9,6 +9,16 @@
     font-size: 1rem;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://wallpapers-clan.com/wp-content/uploads/2023/10/night-forest-with-wild-animals-desktop-wallpaper-preview.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -22,53 +32,38 @@ h1 {
     font-weight: 900;
     text-align: center;
     margin-bottom: 1rem;
+    color: white;
+    color: #30A459;
 }
 
-#red {
-    color: red;
-    font-size: 2rem;
-}
-
-#green {
-    color: green;
-    font-size: 2rem;
-}
-
-#blue {
-    color: blue;
-    font-size: 2rem;
-}
 label{
     padding-right: 10px;
+    color: white;
 }
-.red{
-    font-size: 1.5rem;
-    color: red;
-}
-.green{
-    font-size: 1.5rem;
-    color: green;
-}
-.blue{
-    font-size: 1.5rem;
-    color: blue;
-}
+
 input {
     height: 2rem;
-    border: 2px solid;
+    border: 2px solid #30A459;
     border-radius: 5px 0 0 5px;
+    background: rgba(48, 164, 89, 0.5);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color: white;
 }
 
 input::placeholder {
     padding-left: 5px;
+    color: white;
 }
 
-button {
+.execute {
     height: 2rem;
     cursor: pointer;
     padding: 0 5px;
-    border: 2px solid black;
+    background: #30A459;
+    border: 2px solid #30A459;
     border-radius: 0 5px 5px 0;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 input:focus,
@@ -88,7 +83,7 @@ button:focus {
 
 .pixel {
     display: inline-block;
-    background-color: #000;
+    background-color: black;
     width: 50px;
     height: 50px;
     border-radius: 10px;
@@ -97,6 +92,9 @@ button:focus {
 .filterDetail {
     font-family: "Consolas", "Menlo", "Ubuntu Mono", monospace;
     margin-bottom: 2rem;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 
 .lossDetail {
@@ -116,4 +114,18 @@ button:focus {
 
 .footer-img img:hover {
     filter: grayscale(0);
+}
+.copyFilter{
+    background: #30A459;
+    padding: 5px 10px;
+    text-align: center;
+    border: 2px solid #30A459;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.filter-copy{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
